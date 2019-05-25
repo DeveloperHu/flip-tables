@@ -1,14 +1,6 @@
 Flip Tables
 ===========
 
-
-Other tables
-------------
-* https://stackoverflow.com/questions/2745206/output-in-a-table-format-in-javas-system-out  
-* https://github.com/cwjcsu/joutable
-* https://github.com/RuedigerMoeller/j-text-utils
-* https://github.com/thedathoudarya/WAGU-data-in-table-view
-
 Because pretty-printing text tables in Java should be easy.
 
 (╯°□°）╯︵ ┻━┻
@@ -209,6 +201,14 @@ License
 
  [1]: https://search.maven.org/remote_content?g=com.jakewharton.fliptables&a=fliptables&v=LATEST
  [snap]: https://oss.sonatype.org/content/repositories/snapshots/  
+ 
+
+Other tables
+------------
+* https://stackoverflow.com/questions/2745206/output-in-a-table-format-in-javas-system-out  
+* https://github.com/cwjcsu/joutable
+* https://github.com/RuedigerMoeller/j-text-utils
+* https://github.com/thedathoudarya/WAGU-data-in-table-view
  
  
 中文等宽支持
