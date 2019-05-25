@@ -63,7 +63,22 @@ public final class FlipTable {
       }
       for (int column = 0; column < columns; column++) {
         for (String rowDataLine : rowData[column].split("\\n")) {
-          columnWidths[column] = Math.max(columnWidths[column], rowDataLine.length());
+	  int cCount = 0;
+          char[] chars = rowDataLine.toCharArray();
+          for (char c : chars) {
+            if (c >= 0x4E00 && c <= 0x9FA5) {
+              cCount++;
+            }
+            Character.UnicodeBlock ub = Character.UnicodeBlock.of(c);
+            if (ub == Character.UnicodeBlock.GENERAL_PUNCTUATION
+                    || ub == Character.UnicodeBlock.CJK_SYMBOLS_AND_PUNCTUATION
+                    || ub == Character.UnicodeBlock.HALFWIDTH_AND_FULLWIDTH_FORMS
+                    || ub == Character.UnicodeBlock.CJK_COMPATIBILITY_FORMS
+                    || ub == Character.UnicodeBlock.VERTICAL_FORMS) {
+              cCount++;
+            }
+          }
+          columnWidths[column] = Math.max(columnWidths[column], rowDataLine.length()+cCount);
         }
       }
     }
@@ -121,6 +136,21 @@ public final class FlipTable {
   }
 
   private static String pad(int width, String data) {
-    return String.format(" %1$-" + width + "s ", data);
+    int cCount = 0;
+    char[] chars = data.toCharArray();
+    for (char c : chars) {
+      if (c >= 0x4E00 && c <= 0x9FA5) {
+        cCount++;
+      }
+      Character.UnicodeBlock ub = Character.UnicodeBlock.of(c);
+      if (ub == Character.UnicodeBlock.GENERAL_PUNCTUATION
+              || ub == Character.UnicodeBlock.CJK_SYMBOLS_AND_PUNCTUATION
+              || ub == Character.UnicodeBlock.HALFWIDTH_AND_FULLWIDTH_FORMS
+              || ub == Character.UnicodeBlock.CJK_COMPATIBILITY_FORMS
+              || ub == Character.UnicodeBlock.VERTICAL_FORMS) {
+        cCount++;
+      }
+    }
+    return String.format(" %1$-" + (width-cCount) + "s ", data);
   }
 }
