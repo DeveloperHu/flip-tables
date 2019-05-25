@@ -1,6 +1,14 @@
 Flip Tables
 ===========
 
+
+Other tables
+------------
+* https://stackoverflow.com/questions/2745206/output-in-a-table-format-in-javas-system-out  
+* https://github.com/cwjcsu/joutable
+* https://github.com/RuedigerMoeller/j-text-utils
+* https://github.com/thedathoudarya/WAGU-data-in-table-view
+
 Because pretty-printing text tables in Java should be easy.
 
 (╯°□°）╯︵ ┻━┻
@@ -200,4 +208,17 @@ License
 
 
  [1]: https://search.maven.org/remote_content?g=com.jakewharton.fliptables&a=fliptables&v=LATEST
- [snap]: https://oss.sonatype.org/content/repositories/snapshots/
+ [snap]: https://oss.sonatype.org/content/repositories/snapshots/  
+ 
+ 
+中文等宽支持
+-------
+* 使用AsciiTableFormat
+* 解决中文和英文等宽问题不应该从代码入手，应该从字体入手，选择一款中英文等宽的字体，并在控制台输出使用这种等宽字体即可解决
+    * 下面推荐一些等宽字体:
+        * 引入解决方案：https://www.v2ex.com/t/26972
+            * 如果是想要“一个汉字＝2个英文字母”的宽度, M+ 1M 这个字体就行，https://mplus-fonts.sourceforge.jp/mplus-outline-fonts/index-en.html
+            * 1. 下载 https://zh.osdn.net/projects/mplus-fonts/downloads/62344/mplus-TESTFLIGHT-063.tar.xz/
+            * 2. 解压 mplus-TESTFLIGHT-046.tar.xz 这个文件
+            * 3. 解压后文件夹里有很多字体，有些是非等宽的，有些是等宽的。mplus-1m-regular.ttf 这个是“一个汉字＝2个英文字母”的宽度。
+```
