@@ -221,4 +221,3 @@ License
             * 1. 下载 https://zh.osdn.net/projects/mplus-fonts/downloads/62344/mplus-TESTFLIGHT-063.tar.xz/
             * 2. 解压 mplus-TESTFLIGHT-046.tar.xz 这个文件
             * 3. 解压后文件夹里有很多字体，有些是非等宽的，有些是等宽的。mplus-1m-regular.ttf 这个是“一个汉字＝2个英文字母”的宽度。
-```
