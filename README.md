@@ -170,15 +170,18 @@ OR
 ```
 
 
-Download
+~~Download~~
 --------
 
-Download the [latest jar][1] or reference on Maven central as
-`com.jakewharton.fliptables:fliptables:1.0.2`.
+~~Download the [latest jar][1] or reference on Maven central as
+`com.jakewharton.fliptables:fliptables:1.0.2`.~~
 
-Snapshots of the development version are available in [Sonatype's `snapshots` repository][snap].
+~~Snapshots of the development version are available in [Sonatype's `snapshots` repository][snap].~~
 
+Tips
+----
 
+This version is not merged into the master branch. so, you can download this source to include your project~
 
 License
 -------
