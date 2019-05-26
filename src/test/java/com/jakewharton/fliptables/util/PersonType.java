@@ -13,8 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
- package com.jakewharton.fliptables.util;
+package com.jakewharton.fliptables.util;
 
 public enum PersonType {
-  HUMAN, COSTUME, PUPPET
+    HUMAN, COSTUME, PUPPET
 }

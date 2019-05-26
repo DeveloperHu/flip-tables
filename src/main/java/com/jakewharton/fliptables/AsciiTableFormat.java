@@ -12,58 +12,59 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
- */package com.jakewharton.fliptables;
+ */
+package com.jakewharton.fliptables;
 
 public class AsciiTableFormat implements TableFormat {
 
-	@Override
-	public String getHeaderRowTopChars() {
-		return "+=+=+";
-	}
+    @Override
+    public String getHeaderRowTopChars() {
+        return "+=+=+";
+    }
 
-	@Override
-	public String getHeaderRowBottomChars() {
-		return "|=|=|";
-	}
+    @Override
+    public String getHeaderRowBottomChars() {
+        return "|=|=|";
+    }
 
-	@Override
-	public String getHeaderRowNoDataBottomChars() {
-		return "|=|=|";
-	}
+    @Override
+    public String getHeaderRowNoDataBottomChars() {
+        return "|=|=|";
+    }
 
-	@Override
-	public String getFooterRowBottomChars() {
-		return "+-+-+";
-	}
+    @Override
+    public String getFooterRowBottomChars() {
+        return "+-+-+";
+    }
 
-	@Override
-	public String getFooterRowNoDataBottomChars() {
-		return "+-+-+";
-	}
+    @Override
+    public String getFooterRowNoDataBottomChars() {
+        return "+-+-+";
+    }
 
-	@Override
-	public String getDataRowDividerChars() {
-		return "|-|-|";
-	}
+    @Override
+    public String getDataRowDividerChars() {
+        return "|-|-|";
+    }
 
-	@Override
-	public String getRowStartChars() {
-		return "|";
-	}
+    @Override
+    public String getRowStartChars() {
+        return "|";
+    }
 
-	@Override
-	public String getRowEndChars() {
-		return "|";
-	}
+    @Override
+    public String getRowEndChars() {
+        return "|";
+    }
 
-	@Override
-	public String getColumnSeparatorChars() {
-		return "|";
-	}
+    @Override
+    public String getColumnSeparatorChars() {
+        return "|";
+    }
 
-	@Override
-	public String getRowEndTerminatorChars() {
-		return "\n";
-	}
+    @Override
+    public String getRowEndTerminatorChars() {
+        return "\n";
+    }
 
 }

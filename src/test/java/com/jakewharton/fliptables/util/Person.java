@@ -13,34 +13,34 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
- package com.jakewharton.fliptables.util;
+package com.jakewharton.fliptables.util;
 
 public final class Person {
-  private final String firstName;
-  private final String lastName;
-  private final int age;
-  private final String nickName;
+    private final String firstName;
+    private final String lastName;
+    private final int age;
+    private final String nickName;
 
-  public Person(String firstName, String lastName, int age, String nickName) {
-    this.firstName = firstName;
-    this.lastName = lastName;
-    this.age = age;
-    this.nickName = nickName;
-  }
+    public Person(String firstName, String lastName, int age, String nickName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.age = age;
+        this.nickName = nickName;
+    }
 
-  public String getFirstName() {
-    return firstName;
-  }
+    public String getFirstName() {
+        return firstName;
+    }
 
-  public String getLastName() {
-    return lastName;
-  }
+    public String getLastName() {
+        return lastName;
+    }
 
-  public int getAge() {
-    return age;
-  }
+    public int getAge() {
+        return age;
+    }
 
-  public String getNickName() {
-    return nickName;
-  }
+    public String getNickName() {
+        return nickName;
+    }
 }

@@ -17,54 +17,54 @@ package com.jakewharton.fliptables;
 
 public class DefaultTableFormat implements TableFormat {
 
-	@Override
-	public String getHeaderRowTopChars() {
-		return "╔═╤═╗";
-	}
+    @Override
+    public String getHeaderRowTopChars() {
+        return "╔═╤═╗";
+    }
 
-	@Override
-	public String getHeaderRowBottomChars() {
-		return "╠═╪═╣";
-	}
+    @Override
+    public String getHeaderRowBottomChars() {
+        return "╠═╪═╣";
+    }
 
-	@Override
-	public String getHeaderRowNoDataBottomChars() {
-		return "╠═╧═╣";
-	}
+    @Override
+    public String getHeaderRowNoDataBottomChars() {
+        return "╠═╧═╣";
+    }
 
-	@Override
-	public String getFooterRowBottomChars() {
-		return "╚═╧═╝";
-	}
+    @Override
+    public String getFooterRowBottomChars() {
+        return "╚═╧═╝";
+    }
 
-	@Override
-	public String getFooterRowNoDataBottomChars() {
-		return "╚═══╝";
-	}
+    @Override
+    public String getFooterRowNoDataBottomChars() {
+        return "╚═══╝";
+    }
 
-	@Override
-	public String getDataRowDividerChars() {
-		return "╟─┼─╢";
-	}
+    @Override
+    public String getDataRowDividerChars() {
+        return "╟─┼─╢";
+    }
 
-	@Override
-	public String getRowStartChars() {
-		return "║";
-	}
+    @Override
+    public String getRowStartChars() {
+        return "║";
+    }
 
-	@Override
-	public String getRowEndChars() {
-		return "║";
-	}
+    @Override
+    public String getRowEndChars() {
+        return "║";
+    }
 
-	@Override
-	public String getColumnSeparatorChars() {
-		return "│";
-	}
+    @Override
+    public String getColumnSeparatorChars() {
+        return "│";
+    }
 
-	@Override
-	public String getRowEndTerminatorChars() {
-		return "\n";
-	}
+    @Override
+    public String getRowEndTerminatorChars() {
+        return "\n";
+    }
 
 }

@@ -16,19 +16,24 @@
 package com.jakewharton.fliptables;
 
 public interface TableFormat {
-	
-	public String getHeaderRowTopChars();  
-	public String getHeaderRowBottomChars(); 
-	public String getHeaderRowNoDataBottomChars();
-	
-	public String getFooterRowBottomChars(); 
-	public String getFooterRowNoDataBottomChars(); 
-	
-	public String getDataRowDividerChars(); 
-	
-	public String getRowStartChars(); 
-	public String getRowEndChars();
-	public String getColumnSeparatorChars();
-	
-	public String getRowEndTerminatorChars(); 
+
+    String getHeaderRowTopChars();
+
+    String getHeaderRowBottomChars();
+
+    String getHeaderRowNoDataBottomChars();
+
+    String getFooterRowBottomChars();
+
+    String getFooterRowNoDataBottomChars();
+
+    String getDataRowDividerChars();
+
+    String getRowStartChars();
+
+    String getRowEndChars();
+
+    String getColumnSeparatorChars();
+
+    String getRowEndTerminatorChars();
 }
